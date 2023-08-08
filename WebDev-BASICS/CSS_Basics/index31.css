@@ -1,0 +1,28 @@
+body{
+    font-size: 28px;
+}
+
+h1{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+div p{
+    color: yellow;
+    background-color: green;
+    font-weight: bold;
+}
+
+div+p{
+    background-color: violet;
+    color: blue;
+    font-weight: lighter;
+}
+
+div>p{
+    background-color: brown;
+    color: white;
+    font-style: italic;
+}

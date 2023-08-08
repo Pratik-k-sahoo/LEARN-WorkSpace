@@ -1,0 +1,129 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 2304px;
+    color: white;
+
+}
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+.left div{
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 7px;
+    margin-left: -14px;
+    font-size: 25px;
+}
+.left img{
+    margin-left: 20px;
+    width: 108px;
+    filter: invert(100%);
+}
+.mid {
+    display: block;
+    width: 42%;
+    margin: 39px auto;
+    /* border: 2px solid blue; */
+    letter-spacing: 4px;
+}
+.right {
+    display: inline-block;
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 36px;
+    right: 34px;
+}
+.btn{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(52, 48, 48);
+}
+.navbar li{
+    display: inline-block;
+    font-size: 40px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 34px 26px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.container{
+    border: 2px solid white;
+    margin: 117px 1374px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 18px;
+    box-shadow: 5px -2px 37px #e04343;
+}
+.container h1{
+    text-align: center;
+    color: rgb(94 24 24);
+    letter-spacing: 4px;
+}
+.form-group input{
+    text-align: center;
+    font-size: 26px;
+    margin: 7px auto;
+    display: block;
+    width: 510px;
+    padding: 9px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
+}
+.container button{
+    display: block;
+    width: 65%;
+    margin: 14px auto;
+    padding: 9px;
+}
+.container2 .image1{
+    display: block;
+    width: 441px;
+    position: absolute;
+    top: 215px;
+    left: 6px;
+    margin: 22px 36px;
+    border-radius: 74px;
+}
+.container2 .image2{
+    display: block;
+    width: 441px;
+    position: absolute;
+    top: 471px;
+    left: 264px;
+    margin: 22px 36px;
+    border-radius: 74px;
+}
+.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+}
+/* @keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+  } */

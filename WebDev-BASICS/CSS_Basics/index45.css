@@ -1,0 +1,96 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+}
+
+.border-now{
+    border: 2px solid black;
+    padding: 23px;
+    background-color: rgb(167, 215, 185);
+}
+
+span{
+    padding: 10px;
+}
+
+nav{
+    grid-area: navbar;
+    text-align: center;
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+@media only screen and (max-width: 426px){
+    body{
+        background-color: red;
+    }
+
+    span{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    body{
+        background-color: blue;
+    }
+    
+    .container{
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer{
+        margin-top: -16px;
+    }
+
+    span{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1440px){
+    body{
+        background-color: yellow;
+    }
+
+    .container{
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    }
+
+    span{
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1441px){
+    body{
+        background-color: green;
+    }
+}

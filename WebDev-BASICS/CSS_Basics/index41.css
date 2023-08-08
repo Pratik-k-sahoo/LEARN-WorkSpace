@@ -1,0 +1,25 @@
+.header{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.header > h1{
+    background-color: red;
+    display: inline;
+    padding: 12px 13px;
+    margin: 10px 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-auto-rows: 3fr;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-columns: 5fr;
+    grid-gap: 1rem;
+}
+
+.box{
+    background-color: greenyellow;
+    border: 2px solid black;
+}

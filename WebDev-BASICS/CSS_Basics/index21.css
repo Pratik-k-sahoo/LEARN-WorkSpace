@@ -1,0 +1,45 @@
+.container{
+    border: 3px solid rgb(16, 154, 48);
+    background-color: rgb(212, 253, 170);
+    padding: 36px;
+    margin: 36px auto;
+    width: 666px;
+}
+
+.btn{
+    border: none;
+    background-color: rgb(95, 245, 61);
+    padding: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: ease-in;
+    transition-duration: 0.2s;
+    box-shadow: none;
+}
+
+.btn:hover{
+    border: 1px solid;
+    border-color: rgb(5, 117, 117);
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    color: rgb(6, 80, 99);
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:visited{
+    background-color: yellow;
+}
+
+a:active{
+    background-color: rgb(113, 254, 195);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

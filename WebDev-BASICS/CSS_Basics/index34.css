@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+header::before{
+    background: url(https://source.unsplash.com/random/?football) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.navigation {
+    font-size: 20px;
+    display: flex;
+}
+
+.navigation::before{
+    filter: blur(1px);
+}
+
+li {
+    list-style: none;
+    padding: 20px 23px;
+
+}
+
+section {
+    margin: 3px 230px;
+    padding: 108px 0px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section::before {
+    content: "This is a before content";
+}
+
+section::after {
+    content: "This is a after content";
+} */
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: -15px -3px 40px black;
+}

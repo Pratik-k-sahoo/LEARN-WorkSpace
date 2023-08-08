@@ -1,0 +1,46 @@
+.container{
+    background-color: greenyellow;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    position: relative;
+    animation: pratik1;
+    animation: pratik2;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    /* short hand for animation */
+    /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+}
+
+@keyframes pratik1 {
+    from{
+        width: 250px;
+    }
+    to{
+        width: 1400px;
+    }
+}
+
+@keyframes pratik2 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 250px;
+        left: 0;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 0;
+        left: 250px;
+    }
+}

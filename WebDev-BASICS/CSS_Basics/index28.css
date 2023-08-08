@@ -1,0 +1,58 @@
+.container{
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    /* Initialise the container as flex Box */
+    display: flex;
+
+    /* flex box properties for flex container */
+    /* flex-direction: row; flex items in row (default) */
+    /* flex-direction: column; flex items in column */
+    /* flex-direction: row-reverse; flex item in reverse order but to right */
+    /* flex-direction: column-reverse; flex item in reverse order but to bottom*/
+
+    /* flex-wrap: wrap; wrap the flex itm in responsive page */
+    /*short hand for combine felx direction and flex wrap*/
+    /* flex-flow: row wrap;  */
+    justify-content: center; /*align items center*/
+    justify-content: space-between; /*space between item qually divided*/
+    align-items: center;
+    align-items: stretch;
+}
+.item{
+    background-color: tomato;
+    border: 2px solid green;
+    margin: 10px;
+    padding: 3px;
+    height: 200px;
+    width: 200px;
+}
+
+/* flex properties for flex item */
+#item-1{
+    /* Higher the order later it shows up in the container */
+    /* order: 2; */
+    
+    /* stretch the item more rapidly */
+    /* flex-grow: 2; */
+
+    /* shrink the item more rapidly */
+    /* flex-shrink: 2; */
+
+    /* when flex direction is set to row flex basis will controll width but when flex direction is set to column it will controll height */
+    flex-basis: 320px;
+}
+
+#item-2{
+    /* order: 41; */
+    /* flex-grow: 3;
+    flex-shrink: 3; */
+}
+
+#item-3{
+    /* short hand for flex grow, flex shrink, flex basis */
+    flex: 2 2 120px;
+    /* align-self: flex-end; */
+    /* align-self: flex-start; */
+    align-self: center;
+}

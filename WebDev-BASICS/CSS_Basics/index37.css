@@ -1,0 +1,31 @@
+h1{
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 3px 3px 4px green;
+    color: white;
+    cursor: cell;
+    border: 2px solid red;
+    /* transition-property: color text-shadow font-size;
+    transition-duration: 1.5s; */
+    /* transition-timing-function: ease-in; */
+    /* transition short hand */
+    /* transition: transition-property transition-duration transition-timing function transition-delay */
+    /* Below is the short hand for multiple transition */
+    transition: 
+        color 2s ease-in 0s, 
+        text-shadow 2s ease-out 0s, 
+        font-size 2s ease-in 0s;
+    
+    /* Below is the short hand for all transition */
+}
+
+h1:hover{
+    width:1000px
+    color: red;
+    cursor: pointer;
+    text-shadow: none;
+    font-size: 80px;
+
+}
