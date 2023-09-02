@@ -1,0 +1,22 @@
+let t = document.body.firstElementChild.firstElementChild;
+console.log(t);
+console.log("table.rows")
+console.log(t.rows);
+console.log("table.Caption")
+console.log(t.caption);
+console.log("table.tHead")
+console.log(t.tHead);
+console.log("table.tFoot")
+console.log(t.tFoot);
+console.log("table.tBodies")
+console.log(t.tBodies);
+console.log("tbody.rows")
+console.log(t.tBodies.rows);
+console.log("tr.cells")
+console.log(t.rows[0].cells);
+console.log("tr.sectionRowIndex")
+console.log(t.rows[0].SectionRowIndex);
+console.log("tr.rowIndex")
+console.log(t.rows[2].rowIndex);
+console.log("td.cellIndex")
+console.log(td.cellIndex);
