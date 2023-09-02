@@ -1,0 +1,1 @@
+// In View page resource tbody will not come but in chrome it will generate a tbody and stores all in that. So in view page resource it will show ras getComputedStyle.
