@@ -3,8 +3,7 @@ let compWin=0;
 let userWin=0;
 while(count<3 || count<11 && compWin==userWin){
     count++
-    let comp = Math.random() * 3
-    comp = Number.parseInt(comp)
+    let comp = Math.floor(Math.random() * 3)
     if(comp==0){
         comp = "S"
     }else if(comp==1){
