@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+.yellow{
+    box-shadow: 2px 1px 43px yellow;
+    background: yellow;
+}
+
+#btn{
+    margin: 20px 708px;
+}
