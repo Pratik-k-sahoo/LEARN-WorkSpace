@@ -1,5 +1,5 @@
 let p1 = new Promise((resolve, reject) => {
-    alert("Hey I am not Resolved")
+    // alert("Hey I am not Resolved")
     setTimeout(() => {
         resolve(1)
     }, 2000)
@@ -12,11 +12,12 @@ p1.then(() => {
             resolve(4)
         }, 6000)
     })
-}).then((value) => {
+}).then((value, error) => {
     console.log(value)
+    console.log(error)
 })
 
 p1.then(() => {
-    alert("Hurrayy!")
+    // alert("Hurrayy!")
     console.log("Hurrayy!");
 })
