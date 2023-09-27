@@ -1,0 +1,17 @@
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 1 21rem;
+    margin: 10px 20px;
+    align-self: normal;
+    align-items: center;
+}
+
+.card a{
+    margin-bottom: 20px;
+}
