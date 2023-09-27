@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     background: #4070f4;
 }
 
-.container{
+.container {
     position: relative;
     max-width: 900px;
     width: 100%;
@@ -26,7 +26,7 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container header{
+.container header {
     display: inline-block;
     position: relative;
     font-size: 20px;
@@ -35,7 +35,7 @@ body{
     transition: all 0.5s ease;
 }
 
-.container header::before{
+.container header::before {
     content: "";
     position: absolute;
     left: 0;
@@ -46,16 +46,17 @@ body{
     transition: all 0.5s ease;
 }
 
-.container header:hover::before{
+.container header:hover::before {
     content: "";
     border-radius: 8px;
     width: 45px;
 }
-.container header:hover{
+
+.container header:hover {
     transform: scale(1.2);
 }
 
-.container form{
+.container form {
     position: relative;
     margin-top: 16px;
     min-height: 500px;
@@ -63,35 +64,35 @@ body{
     overflow: hidden;
 }
 
-.container form .form{
+.container form .form {
     position: absolute;
     background-color: #fff;
     transition: 0.3s ease-in;
 }
 
-.container form .form.second{
+.container form .form.second {
     opacity: 0;
     pointer-events: none;
     transform: translateX(100%);
 }
 
-form.secActive .form.second{
+form.secActive .form.second {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(0);
 }
 
-form.secActive .form.first{
+form.secActive .form.first {
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
 }
 
-fieldset{
+fieldset {
     padding: 8px 10px;
 }
 
-.container form .title{
+.container form .title {
     display: block;
     font-size: 16px;
     font-weight: 500;
@@ -99,27 +100,27 @@ fieldset{
     color: #333;
 }
 
-.container form .fields{
+.container form .fields {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-form .fields .input-fields{
+form .fields .input-fields {
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 4px 0;
 }
 
-#image{
+#image {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#display_img{
+#display_img {
     width: 95px;
     height: 55px;
     border: 1px solid black;
@@ -127,28 +128,28 @@ form .fields .input-fields{
     background-size: cover;
 }
 
-form .fields .input-fields .radioBtn{
+form .fields .input-fields .radioBtn {
     display: flex;
     align-items: center;
 }
 
-form .fields .input-fields .radioBtn label{
+form .fields .input-fields .radioBtn label {
     margin-right: 10px;
     font-size: 14px;
 }
 
-form .fields .input-fields .radioBtn input{
+form .fields .input-fields .radioBtn input {
     margin-right: 10px;
     height: auto;
 }
 
-.input-fields label{
+.input-fields label {
     font-size: 12px;
     font-weight: 500;
     color: #2e2e2e;
 }
 
-.input-fields input{
+.input-fields input {
     outline: none;
     border-radius: 5px;
     font-size: 14px;
@@ -160,19 +161,20 @@ form .fields .input-fields .radioBtn input{
     margin: 8px 0;
 }
 
-.input-fields input:is(:focus, :valid){
+.input-fields input:is(:focus, :valid) {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
 
-.input-fields input[type="date"]{
+.input-fields input[type="date"] {
     color: #707070;
 }
 
-.input-fields input[type="date"]:valid{
+.input-fields input[type="date"]:valid {
     color: #333;
 }
 
-.container form button, .backBtn{
+.container form button,
+.backBtn {
     position: relative;
     margin: 25px 0;
     display: flex;
@@ -190,7 +192,7 @@ form .fields .input-fields .radioBtn input{
 }
 
 form button::before,
-form .backBtn::before{
+form .backBtn::before {
     content: "";
     position: absolute;
     top: 6px;
@@ -204,13 +206,13 @@ form .backBtn::before{
 }
 
 form button:hover::before,
-form .backBtn:hover::before{
+form .backBtn:hover::before {
     background-color: #6389f2;
     transform: scaleY(0);
 }
 
 form button::after,
-form .backBtn::after{
+form .backBtn::after {
     content: "";
     position: absolute;
     left: 6px;
@@ -223,37 +225,60 @@ form .backBtn::after{
 }
 
 form button:hover::after,
-form .backBtn:hover::after{
+form .backBtn:hover::after {
     background-color: #6389f2;
     transform: scaleX(0);
 }
 
 form button,
-form .backBtn:hover{
+form .backBtn:hover {
     background-color: #6389f2;
 }
 
-form button span, i,
-form .backBtn span, i{
+form button span,
+i,
+form .backBtn span,
+i {
     font-size: 18px;
     position: relative;
     z-index: 3;
 }
 
-form .backBtn i{
+form .backBtn i {
     transform: rotate(180deg);
 }
 
 form button i,
-form .backBtn i
-{
+form .backBtn i {
     margin: 0 5px;
 }
 
-form .buttons{
+form .buttons {
     display: flex;
     align-items: center;
 }
-form .buttons button, .backBtn{
+
+form .buttons button,
+.backBtn {
     margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+
+    form .fields .input-fields {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-fields {
+        width: 100%
+    }
 }
