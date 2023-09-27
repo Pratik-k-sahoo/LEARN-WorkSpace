@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <fieldset>
+                        <legend class="title">Personal Details</legend>
+
+                        <div class="fields">
+                            <div class="input-fields">
+                                <label>Full Name*</label>
+                                <input type="text" placeholder="Enter Your Name" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Date Of Birth*</label>
+                                <input type="date" placeholder="Enter Your DOB" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>EMAIL*</label>
+                                <input type="email" placeholder="Enter Your E-MAIL" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Mobile Number*</label>
+                                <input type="number" placeholder="Enter mobile Number" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Gender*</label>
+                                <div class="radioBtn">
+                                    <label>Male</label>
+                                    <input type="radio" name="gender" required>
+                                    <label>Female</label>
+                                    <input type="radio" name="gender" required>
+                                    <label>Others</label>
+                                    <input type="radio" name="gender" required>
+                                </div>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Occupation*</label>
+                                <input type="text" placeholder="Enter Your Occupation" list="occu" required>
+                                <datalist id="occu">
+                                    <option value="Student">
+                                    <option value="Laborer">
+                                    <option value="Factory Work">
+                                    <option value="Owner-Operator">
+                                    <option value="Self Employed">
+                                    <option value="Homemaker">
+                                    <option value="Unemployed">
+                                    <option value="Retired">
+                                </datalist>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="details ID">
+                    <fieldset>
+                        <legend class="title">Identity Details</legend>
+
+                        <div class="fields">
+                            <div class="input-fields">
+                                <label>ID Type*</label>
+                                <input type="text" placeholder="Enter Your ID Type" list="idType" size="4" required>
+                                <datalist id="idType">
+                                    <option value="Aadhaar">
+                                    <option value="Indian passport">
+                                    <option value="Overseas Passport">
+                                    <option value="Electoral Photo Identity Card">
+                                    <option value="Overseas Citizenship of India">
+                                    <option value="Permanent account number">
+                                    <option value="Driving license">
+                                    <option value="Ration card">
+                                    <option value="Birth certificate">
+                                    <option value="Gas Connection Bill">
+                                    <option value="Bank/ Kisan/ Post Office Passbooks">
+                                </datalist>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>ID Number*</label>
+                                <input type="text" placeholder="Enter Your ID Number" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Issued Date*</label>
+                                <input type="date" placeholder="Enter Issued Date" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Issued State*</label>
+                                <input type="text" placeholder="Enter Issued State" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Expiry Date</label>
+                                <input type="date" placeholder="Enter Expiry Date">
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Photo*</label>
+                                <div id="image">
+                                    <input type="file" id="image_input" accept="image/*" required>
+                                    <div id="display_img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <fieldset>
+                        <legend class="title">Address Details</legend>
+
+                        <div class="fields">
+                            <div class="input-fields">
+                                <label>Address*</label>
+                                <input type="text" placeholder="Enter Your Address" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Country*</label>
+                                <input type="text" placeholder="Enter Country" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>State*</label>
+                                <input type="text" placeholder="Enter State" required>
+                            </div>
+                            
+                            <div class="input-fields">
+                                <label>District*</label>
+                                <input type="text" placeholder="Enter District" required>
+                            </div>
+                            
+                            <div class="input-fields">
+                                <label>Block*</label>
+                                <input type="text" placeholder="Enter Block" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Pin code*</label>
+                                <input type="number" placeholder="Enter Pin-code" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="details family">
+                    <fieldset>
+                        <legend class="title">Family Details</legend>
+
+                        <div class="fields">
+                            <div class="input-fields">
+                                <label>Father Name/Spouse Name*</label>
+                                <input type="text" placeholder="Enter Father's/Spouse's Name" required>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Mother Name</label>
+                                <input type="text" placeholder="Enter Your Mother's Name">
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Father's/Spouse's Occupation*</label>
+                                <input type="text" placeholder="Enter Father's Occupation" list="famOccu" required>
+                                <datalist id="famOccu">
+                                    <option value="Student">
+                                    <option value="Laborer">
+                                    <option value="Factory Work">
+                                    <option value="Owner-Operator">
+                                    <option value="Self Employed">
+                                    <option value="Homemaker">
+                                    <option value="Unemployed">
+                                    <option value="Retired">
+                                </datalist>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Mother's Occupation</label>
+                                <input type="text" placeholder="Enter Mothers's Occupation" list="mothOccu">
+                                <datalist id="mothOccu">
+                                    <option value="Student">
+                                    <option value="Laborer">
+                                    <option value="Factory Work">
+                                    <option value="Owner-Operator">
+                                    <option value="Self Employed">
+                                    <option value="Homemaker">
+                                    <option value="Unemployed">
+                                    <option value="Retired">
+                                </datalist>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Annual Income*</label>
+                                <input type="text" placeholder="Enter Family Annual Income" list="income" required>
+                                <datalist id="income">
+                                    <option value="<1lakh">
+                                    <option value="<3lakh">
+                                    <option value=">5lakh">
+                                </datalist>
+                            </div>
+
+                            <div class="input-fields">
+                                <label>Residence Since</label>
+                                <input type="date" placeholder="Residence Since">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+    
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
