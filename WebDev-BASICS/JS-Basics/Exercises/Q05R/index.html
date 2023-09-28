@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Man</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side">
+            <div class="side1">HackerMan</div>
+        </div>
+
+        <div class="main">
+            <h1 class="heading">Hacker Man</h1>
+            <div class="text">
+                <label for="target">Specify Target:</label>
+                <input type="text" id="target">
+            </div>
+
+            <input type="checkbox" id="facebook" class="check" name="facebook">
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" id="instagram" class="check" name="instagram">
+            <label for="instagram">Instagram</label>
+            <input type="checkbox" id="mobile" class="check" name="mobile" onclick="checkall()">
+            <label for="mobile">Mobile Access</label>
+
+            <div class="text size"></div>
+            <div class="text size"></div>
+            <div class="text size"></div>
+            <div class="text size red"></div>
+            <div class="text size"></div>
+            <div class="text size"></div>
+
+            <div class="hack_btn" onclick="hack()">Hack</div>
+        </div>
+
+        <div class="side">
+            <div class="side1">HackerMan</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
